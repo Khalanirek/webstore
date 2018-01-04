@@ -4,8 +4,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.PathMatchConfigurer;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
+import org.springframework.web.util.UrlPathHelper;
 
 @Configuration
 @EnableWebMvc
@@ -23,5 +25,13 @@ public class AppConfig extends WebMvcConfigurerAdapter {
     public void configureDefaultServletHandling (DefaultServletHandlerConfigurer configurer){
 
         configurer.enable();
+    }
+
+    @Override
+    public void configurePathMatch(PathMatchConfigurer configurer) {
+        UrlPathHelper pathHelper = new UrlPathHelper();
+        //Enable matrix variable
+        pathHelper.setRemoveSemicolonContent(false);
+        configurer.setUrlPathHelper(pathHelper);
     }
 }
