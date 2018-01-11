@@ -34,4 +34,8 @@ public class ProductServiceImpl implements ProductService{
     public List<Product> getProductsByPrice(String low, String high) {
         return productRepository.getProductsByPrice(low, high);
     }
+
+    public void addProduct(Product product) {
+        productRepository.addProduct(product);
+    }
 }
