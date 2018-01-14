@@ -17,7 +17,8 @@
 </head>
 <body>
 <section>
-    <div class="jumbotron">
+    <div class="jumbotron" >
+        <a href="<c:url value="/j_spring_security_logout" />" class="btn btn-danger btn-mini pull-right">logout</a>
         <div class="container">
             <h1>Products</h1>
             <p>Add products</p>
