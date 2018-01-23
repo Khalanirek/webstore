@@ -1,5 +1,6 @@
 package com.packt.util;
 
+import com.packt.Interceptor.PerformanceMonitorInterceptor;
 import com.packt.domain.Product;
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
@@ -103,4 +104,15 @@ public class AppConfig extends WebMvcConfigurerAdapter {
         registry.addResourceHandler("/resources/**")
                 .addResourceLocations("/WEB-INF/classes/");
     }
+
+    @Bean
+    PerformanceMonitorInterceptor localInterceptor() {
+        return new PerformanceMonitorInterceptor();
+    }
+
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        registry.addInterceptor(localInterceptor());
+    }
+
 }
