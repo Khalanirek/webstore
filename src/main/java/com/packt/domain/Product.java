@@ -4,14 +4,20 @@ package com.packt.domain;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.validation.constraints.*;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.math.BigDecimal;
 
 @XmlRootElement
 public class Product {
 
+    @Pattern(regexp="P[0-9]+", message="{Pattern.Product.productId.validation}")
     private String productId;
+    @Size(min=4, max=50, message="{Size.Product.name.validation}")
     private String name;
+    @Min(value=0, message="{Min.Product.unitPrice.validation}")
+    @Digits(integer=8, fraction=2, message="{Digits.Product.unitPrice.validation}")
+    @NotNull(message= "{NotNull.Product.unitPrice.validation}")
     private BigDecimal unitPrice;
     private String description;
     private String manufacturer;
@@ -161,4 +167,5 @@ public class Product {
     public String toString(){
         return "Product [productId=" + productId + ", name=" + name + "]";
     }
+
 }

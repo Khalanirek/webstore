@@ -14,6 +14,7 @@
     <link
             rel="stylesheet"href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
     <title>Products</title>
+    <form:errors path="*" cssClass="alert alert-danger" element="div"/>
 </head>
 <body>
 <section>
@@ -37,6 +38,7 @@
                    for="productId"><spring:message code= "addProduct.form.productId.label"/></label>
             <div class="col-lg-10">
                 <form:input id="productId" path="productId" type="text" class="form:input-large"/>
+                <form:errors path="productId" cssClass="text-danger"/>
             </div>
         </div>
         <div class="form-group">
@@ -44,6 +46,7 @@
                    for="name"><spring:message code= "addProduct.form.name.label"/></label>
             <div class="col-lg-10">
                 <form:input id="name" path="name" type="text" class="form:input-large"/>
+                <form:errors path="name" cssClass="text-danger"/>
             </div>
         </div>
         <div class="form-group">
@@ -51,6 +54,7 @@
                    for="unitPrice"><spring:message code= "addProduct.form.unitPrice.label"/></label>
             <div class="col-lg-10">
                 <form:input id="unitPrice" path="unitPrice" type="text" class="form:input-large"/>
+                <form:errors path="unitPrice" cssClass="text-danger"/>
             </div>
         </div>
         <div class="form-group">
