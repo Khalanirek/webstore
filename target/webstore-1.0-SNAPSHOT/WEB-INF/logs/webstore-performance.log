@@ -1920,3 +1920,580 @@ java.lang.NullPointerException
 2018-01-23 15:34:45INFO  PerformanceMonitorInterceptor:32 - Request processing ended on 23/01/2018 at 03:34:45
 2018-01-23 15:34:45INFO  PerformanceMonitorInterceptor:40 - Total time taken for processing: 7 ms
 2018-01-23 15:34:45INFO  PerformanceMonitorInterceptor:43 - =======================================================
+2018-01-23 16:00:29INFO  XmlWebApplicationContext:873 - Closing WebApplicationContext for namespace 'DefaultServlet-servlet': startup date [Tue Jan 23 15:34:04 CET 2018]; parent: Root WebApplicationContext
+2018-01-23 16:00:29INFO  XmlWebApplicationContext:873 - Closing Root WebApplicationContext: startup date [Tue Jan 23 15:34:03 CET 2018]; root of context hierarchy
+2018-01-23 16:00:45INFO  ContextLoader:285 - Root WebApplicationContext: initialization started
+2018-01-23 16:00:45INFO  XmlWebApplicationContext:513 - Refreshing Root WebApplicationContext: startup date [Tue Jan 23 16:00:45 CET 2018]; root of context hierarchy
+2018-01-23 16:00:45INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from ServletContext resource [/WEB-INF/security-context.xml]
+2018-01-23 16:00:45INFO  SpringSecurityCoreVersion:33 - You are running with Spring Security Core 3.1.4.RELEASE
+2018-01-23 16:00:45ERROR SpringSecurityCoreVersion:35 - *** Spring Major version '3' expected, but you are running with version: 4.0.3.RELEASE. Please check your classpath for unwanted jar files.
+2018-01-23 16:00:45INFO  SecurityNamespaceHandler:59 - Spring Security 'config' module version is 3.1.4.RELEASE
+2018-01-23 16:00:45INFO  HttpSecurityBeanDefinitionParser:264 - Checking sorted filter chain: [Root bean: class [org.springframework.security.web.context.SecurityContextPersistenceFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 200, Root bean: class [org.springframework.security.web.authentication.logout.LogoutFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 400, <org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0>, order = 800, Root bean: class [org.springframework.security.web.authentication.www.BasicAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1200, Root bean: class [org.springframework.security.web.savedrequest.RequestCacheAwareFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1300, Root bean: class [org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1400, Root bean: class [org.springframework.security.web.authentication.AnonymousAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1700, Root bean: class [org.springframework.security.web.session.SessionManagementFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1800, Root bean: class [org.springframework.security.web.access.ExceptionTranslationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1900, <org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0>, order = 2000]
+2018-01-23 16:00:46INFO  DefaultSecurityFilterChain:28 - Creating filter chain: org.springframework.security.web.util.AnyRequestMatcher@1, [org.springframework.security.web.context.SecurityContextPersistenceFilter@15b85802, org.springframework.security.web.authentication.logout.LogoutFilter@6fd4477c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@346d8ac9, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@69d2d267, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3efdff17, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@73dfa013, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2b3c5763, org.springframework.security.web.session.SessionManagementFilter@5402e989, org.springframework.security.web.access.ExceptionTranslationFilter@556b159, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@b0746d8]
+2018-01-23 16:00:46INFO  DefaultFilterChainValidator:122 - Checking whether login URL '/login' is accessible with your configuration
+2018-01-23 16:00:46INFO  ContextLoader:325 - Root WebApplicationContext: initialization completed in 722 ms
+2018-01-23 16:00:46INFO  DispatcherServlet:479 - FrameworkServlet 'DefaultServlet': initialization started
+2018-01-23 16:00:46INFO  XmlWebApplicationContext:513 - Refreshing WebApplicationContext for namespace 'DefaultServlet-servlet': startup date [Tue Jan 23 16:00:46 CET 2018]; parent: Root WebApplicationContext
+2018-01-23 16:00:46INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from ServletContext resource [/WEB-INF/DefaultServlet-servlet.xml]
+2018-01-23 16:00:46INFO  RequestMappingHandlerMapping:197 - Mapped "{[/customers],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.packt.controller.CustomerController.customers(org.springframework.ui.Model)
+2018-01-23 16:00:46INFO  RequestMappingHandlerMapping:197 - Mapped "{[/welcome/greeting],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.packt.controller.HomeController.greeting()
+2018-01-23 16:00:46INFO  RequestMappingHandlerMapping:197 - Mapped "{[/],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.packt.controller.HomeController.welcome(org.springframework.ui.Model)
+2018-01-23 16:00:46INFO  RequestMappingHandlerMapping:197 - Mapped "{[/logout],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.packt.controller.LoginController.logout(org.springframework.ui.Model)
+2018-01-23 16:00:46INFO  RequestMappingHandlerMapping:197 - Mapped "{[/login],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.packt.controller.LoginController.login()
+2018-01-23 16:00:46INFO  RequestMappingHandlerMapping:197 - Mapped "{[/loginfailed],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.packt.controller.LoginController.loginerror(org.springframework.ui.Model)
+2018-01-23 16:00:46INFO  RequestMappingHandlerMapping:197 - Mapped "{[/order/P1234/2],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.packt.controller.OrderController.process()
+2018-01-23 16:00:46INFO  RequestMappingHandlerMapping:197 - Mapped "{[/products],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.packt.controller.ProductController.list(org.springframework.ui.Model)
+2018-01-23 16:00:46INFO  RequestMappingHandlerMapping:197 - Mapped "{[/products/add],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.packt.controller.ProductController.processAddNewProductForm(com.packt.domain.Product,org.springframework.validation.BindingResult,javax.servlet.http.HttpServletRequest)
+2018-01-23 16:00:46INFO  RequestMappingHandlerMapping:197 - Mapped "{[/products/add],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.packt.controller.ProductController.getAddNewProductForm(org.springframework.ui.Model)
+2018-01-23 16:00:46INFO  RequestMappingHandlerMapping:197 - Mapped "{[/products/{category}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.packt.controller.ProductController.getProductsByCategory(org.springframework.ui.Model,java.lang.String)
+2018-01-23 16:00:46INFO  RequestMappingHandlerMapping:197 - Mapped "{[/products/product],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.packt.controller.ProductController.getProductById(java.lang.String,org.springframework.ui.Model)
+2018-01-23 16:00:46INFO  RequestMappingHandlerMapping:197 - Mapped "{[/products/{category}/{price}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.packt.controller.ProductController.filterProducts(java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.ui.Model)
+2018-01-23 16:00:46INFO  RequestMappingHandlerMapping:197 - Mapped "{[/products/invalidPromoCode],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.packt.controller.ProductController.invalidPromoCode()
+2018-01-23 16:00:46INFO  SimpleUrlHandlerMapping:315 - Mapped URL path [/resources/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-23 16:00:46INFO  SimpleUrlHandlerMapping:315 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2018-01-23 16:00:47INFO  DispatcherServlet:498 - FrameworkServlet 'DefaultServlet': initialization completed in 950 ms
+2018-01-23 16:00:47INFO  PerformanceMonitorInterceptor:23 - Accessing URL path: /webstore/
+2018-01-23 16:00:47INFO  PerformanceMonitorInterceptor:24 - Request processing started on: 23/01/2018 at 04:00:47
+2018-01-23 16:00:47INFO  PerformanceMonitorInterceptor:27 - C:\Users\Piotrek\IdeaProjects\webstore\target\webstore-1.0-SNAPSHOT\
+2018-01-23 16:00:47INFO  PerformanceMonitorInterceptor:32 - Request processing ended on 23/01/2018 at 04:00:47
+2018-01-23 16:00:47INFO  PerformanceMonitorInterceptor:23 - Accessing URL path: /webstore/welcome/greeting
+2018-01-23 16:00:47INFO  PerformanceMonitorInterceptor:24 - Request processing started on: 23/01/2018 at 04:00:47
+2018-01-23 16:00:47INFO  PerformanceMonitorInterceptor:27 - C:\Users\Piotrek\IdeaProjects\webstore\target\webstore-1.0-SNAPSHOT\
+2018-01-23 16:00:47INFO  PerformanceMonitorInterceptor:32 - Request processing ended on 23/01/2018 at 04:00:47
+2018-01-23 16:00:48INFO  PerformanceMonitorInterceptor:40 - Total time taken for processing: 639 ms
+2018-01-23 16:00:48INFO  PerformanceMonitorInterceptor:43 - =======================================================
+2018-01-23 16:00:48ERROR HandlerExecutionChain:170 - HandlerInterceptor.afterCompletion threw exception
+java.lang.NullPointerException
+	at com.packt.Interceptor.PerformanceMonitorInterceptor.afterCompletion(PerformanceMonitorInterceptor.java:39)
+	at org.springframework.web.servlet.HandlerExecutionChain.triggerAfterCompletion(HandlerExecutionChain.java:167)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1023)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:952)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:870)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:852)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:118)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:84)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:103)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:54)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:45)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilter(BasicAuthenticationFilter.java:150)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:183)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:87)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:192)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:160)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:344)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:261)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:651)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:501)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:754)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1376)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2018-01-23 16:00:48INFO  PerformanceMonitorInterceptor:23 - Accessing URL path: /webstore/
+2018-01-23 16:00:48INFO  PerformanceMonitorInterceptor:24 - Request processing started on: 23/01/2018 at 04:00:48
+2018-01-23 16:00:48INFO  PerformanceMonitorInterceptor:27 - C:\Users\Piotrek\IdeaProjects\webstore\target\webstore-1.0-SNAPSHOT\
+2018-01-23 16:00:48INFO  PerformanceMonitorInterceptor:32 - Request processing ended on 23/01/2018 at 04:00:48
+2018-01-23 16:00:48INFO  PerformanceMonitorInterceptor:23 - Accessing URL path: /webstore/welcome/greeting
+2018-01-23 16:00:48INFO  PerformanceMonitorInterceptor:24 - Request processing started on: 23/01/2018 at 04:00:48
+2018-01-23 16:00:48INFO  PerformanceMonitorInterceptor:27 - C:\Users\Piotrek\IdeaProjects\webstore\target\webstore-1.0-SNAPSHOT\
+2018-01-23 16:00:48INFO  PerformanceMonitorInterceptor:32 - Request processing ended on 23/01/2018 at 04:00:48
+2018-01-23 16:00:48INFO  PerformanceMonitorInterceptor:40 - Total time taken for processing: 4 ms
+2018-01-23 16:00:48INFO  PerformanceMonitorInterceptor:43 - =======================================================
+2018-01-23 16:00:48ERROR HandlerExecutionChain:170 - HandlerInterceptor.afterCompletion threw exception
+java.lang.NullPointerException
+	at com.packt.Interceptor.PerformanceMonitorInterceptor.afterCompletion(PerformanceMonitorInterceptor.java:39)
+	at org.springframework.web.servlet.HandlerExecutionChain.triggerAfterCompletion(HandlerExecutionChain.java:167)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1023)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:952)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:870)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:852)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:118)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:84)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:103)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:54)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:45)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilter(BasicAuthenticationFilter.java:150)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:183)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:87)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:192)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:160)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:344)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:261)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:651)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:501)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:754)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1376)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2018-01-23 16:00:54INFO  PerformanceMonitorInterceptor:23 - Accessing URL path: /webstore/products/specialOffer?promo=offer
+2018-01-23 16:00:54INFO  PerformanceMonitorInterceptor:24 - Request processing started on: 23/01/2018 at 04:00:54
+2018-01-23 16:00:54INFO  PerformanceMonitorInterceptor:27 - C:\Users\Piotrek\IdeaProjects\webstore\target\webstore-1.0-SNAPSHOT\
+2018-01-23 16:00:54INFO  PerformanceMonitorInterceptor:40 - Total time taken for processing: 15 ms
+2018-01-23 16:00:54INFO  PerformanceMonitorInterceptor:43 - =======================================================
+2018-01-23 16:08:29INFO  XmlWebApplicationContext:873 - Closing WebApplicationContext for namespace 'DefaultServlet-servlet': startup date [Tue Jan 23 16:00:46 CET 2018]; parent: Root WebApplicationContext
+2018-01-23 16:08:29INFO  XmlWebApplicationContext:873 - Closing Root WebApplicationContext: startup date [Tue Jan 23 16:00:45 CET 2018]; root of context hierarchy
+2018-01-23 16:08:38INFO  ContextLoader:285 - Root WebApplicationContext: initialization started
+2018-01-23 16:08:38INFO  XmlWebApplicationContext:513 - Refreshing Root WebApplicationContext: startup date [Tue Jan 23 16:08:38 CET 2018]; root of context hierarchy
+2018-01-23 16:08:38INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from ServletContext resource [/WEB-INF/security-context.xml]
+2018-01-23 16:08:39INFO  SpringSecurityCoreVersion:33 - You are running with Spring Security Core 3.1.4.RELEASE
+2018-01-23 16:08:39ERROR SpringSecurityCoreVersion:35 - *** Spring Major version '3' expected, but you are running with version: 4.0.3.RELEASE. Please check your classpath for unwanted jar files.
+2018-01-23 16:08:39INFO  SecurityNamespaceHandler:59 - Spring Security 'config' module version is 3.1.4.RELEASE
+2018-01-23 16:08:39INFO  HttpSecurityBeanDefinitionParser:264 - Checking sorted filter chain: [Root bean: class [org.springframework.security.web.context.SecurityContextPersistenceFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 200, Root bean: class [org.springframework.security.web.authentication.logout.LogoutFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 400, <org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0>, order = 800, Root bean: class [org.springframework.security.web.authentication.www.BasicAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1200, Root bean: class [org.springframework.security.web.savedrequest.RequestCacheAwareFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1300, Root bean: class [org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1400, Root bean: class [org.springframework.security.web.authentication.AnonymousAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1700, Root bean: class [org.springframework.security.web.session.SessionManagementFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1800, Root bean: class [org.springframework.security.web.access.ExceptionTranslationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1900, <org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0>, order = 2000]
+2018-01-23 16:08:39INFO  DefaultSecurityFilterChain:28 - Creating filter chain: org.springframework.security.web.util.AnyRequestMatcher@1, [org.springframework.security.web.context.SecurityContextPersistenceFilter@4e0387fa, org.springframework.security.web.authentication.logout.LogoutFilter@6a45530d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@780c8fe1, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5fe7665c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@d89060d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4d14e18a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@51fb1c4e, org.springframework.security.web.session.SessionManagementFilter@354a55ab, org.springframework.security.web.access.ExceptionTranslationFilter@70b69461, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1a44234c]
+2018-01-23 16:08:39INFO  DefaultFilterChainValidator:122 - Checking whether login URL '/login' is accessible with your configuration
+2018-01-23 16:08:39INFO  ContextLoader:325 - Root WebApplicationContext: initialization completed in 760 ms
+2018-01-23 16:08:39INFO  DispatcherServlet:479 - FrameworkServlet 'DefaultServlet': initialization started
+2018-01-23 16:08:39INFO  XmlWebApplicationContext:513 - Refreshing WebApplicationContext for namespace 'DefaultServlet-servlet': startup date [Tue Jan 23 16:08:39 CET 2018]; parent: Root WebApplicationContext
+2018-01-23 16:08:39INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from ServletContext resource [/WEB-INF/DefaultServlet-servlet.xml]
+2018-01-23 16:08:40INFO  RequestMappingHandlerMapping:197 - Mapped "{[/customers],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.packt.controller.CustomerController.customers(org.springframework.ui.Model)
+2018-01-23 16:08:40INFO  RequestMappingHandlerMapping:197 - Mapped "{[/welcome/greeting],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.packt.controller.HomeController.greeting()
+2018-01-23 16:08:40INFO  RequestMappingHandlerMapping:197 - Mapped "{[/],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.packt.controller.HomeController.welcome(org.springframework.ui.Model)
+2018-01-23 16:08:40INFO  RequestMappingHandlerMapping:197 - Mapped "{[/logout],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.packt.controller.LoginController.logout(org.springframework.ui.Model)
+2018-01-23 16:08:40INFO  RequestMappingHandlerMapping:197 - Mapped "{[/login],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.packt.controller.LoginController.login()
+2018-01-23 16:08:40INFO  RequestMappingHandlerMapping:197 - Mapped "{[/loginfailed],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.packt.controller.LoginController.loginerror(org.springframework.ui.Model)
+2018-01-23 16:08:40INFO  RequestMappingHandlerMapping:197 - Mapped "{[/order/P1234/2],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.packt.controller.OrderController.process()
+2018-01-23 16:08:40INFO  RequestMappingHandlerMapping:197 - Mapped "{[/products],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.packt.controller.ProductController.list(org.springframework.ui.Model)
+2018-01-23 16:08:40INFO  RequestMappingHandlerMapping:197 - Mapped "{[/products/add],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.packt.controller.ProductController.getAddNewProductForm(org.springframework.ui.Model)
+2018-01-23 16:08:40INFO  RequestMappingHandlerMapping:197 - Mapped "{[/products/{category}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.packt.controller.ProductController.getProductsByCategory(org.springframework.ui.Model,java.lang.String)
+2018-01-23 16:08:40INFO  RequestMappingHandlerMapping:197 - Mapped "{[/products/add],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.packt.controller.ProductController.processAddNewProductForm(com.packt.domain.Product,org.springframework.validation.BindingResult,javax.servlet.http.HttpServletRequest)
+2018-01-23 16:08:40INFO  RequestMappingHandlerMapping:197 - Mapped "{[/products/invalidPromoCode],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.packt.controller.ProductController.invalidPromoCode()
+2018-01-23 16:08:40INFO  RequestMappingHandlerMapping:197 - Mapped "{[/products/product],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.packt.controller.ProductController.getProductById(java.lang.String,org.springframework.ui.Model)
+2018-01-23 16:08:40INFO  RequestMappingHandlerMapping:197 - Mapped "{[/products/{category}/{price}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.packt.controller.ProductController.filterProducts(java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.ui.Model)
+2018-01-23 16:08:40INFO  SimpleUrlHandlerMapping:315 - Mapped URL path [/resources/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-23 16:08:40INFO  SimpleUrlHandlerMapping:315 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2018-01-23 16:08:40INFO  DispatcherServlet:498 - FrameworkServlet 'DefaultServlet': initialization completed in 961 ms
+2018-01-23 16:08:40INFO  PerformanceMonitorInterceptor:23 - Accessing URL path: /webstore/
+2018-01-23 16:08:40INFO  PerformanceMonitorInterceptor:24 - Request processing started on: 23/01/2018 at 04:08:40
+2018-01-23 16:08:40INFO  PerformanceMonitorInterceptor:27 - C:\Users\Piotrek\IdeaProjects\webstore\target\webstore-1.0-SNAPSHOT\
+2018-01-23 16:08:40INFO  PerformanceMonitorInterceptor:32 - Request processing ended on 23/01/2018 at 04:08:40
+2018-01-23 16:08:40INFO  PerformanceMonitorInterceptor:23 - Accessing URL path: /webstore/welcome/greeting
+2018-01-23 16:08:40INFO  PerformanceMonitorInterceptor:24 - Request processing started on: 23/01/2018 at 04:08:40
+2018-01-23 16:08:40INFO  PerformanceMonitorInterceptor:27 - C:\Users\Piotrek\IdeaProjects\webstore\target\webstore-1.0-SNAPSHOT\
+2018-01-23 16:08:40INFO  PerformanceMonitorInterceptor:32 - Request processing ended on 23/01/2018 at 04:08:40
+2018-01-23 16:08:41INFO  PerformanceMonitorInterceptor:40 - Total time taken for processing: 556 ms
+2018-01-23 16:08:41INFO  PerformanceMonitorInterceptor:43 - =======================================================
+2018-01-23 16:08:41ERROR HandlerExecutionChain:170 - HandlerInterceptor.afterCompletion threw exception
+java.lang.NullPointerException
+	at com.packt.Interceptor.PerformanceMonitorInterceptor.afterCompletion(PerformanceMonitorInterceptor.java:39)
+	at org.springframework.web.servlet.HandlerExecutionChain.triggerAfterCompletion(HandlerExecutionChain.java:167)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1023)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:952)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:870)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:852)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:118)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:84)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:103)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:54)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:45)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilter(BasicAuthenticationFilter.java:150)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:183)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:87)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:192)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:160)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:344)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:261)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:651)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:501)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:754)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1376)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2018-01-23 16:08:41INFO  PerformanceMonitorInterceptor:23 - Accessing URL path: /webstore/
+2018-01-23 16:08:41INFO  PerformanceMonitorInterceptor:24 - Request processing started on: 23/01/2018 at 04:08:41
+2018-01-23 16:08:41INFO  PerformanceMonitorInterceptor:27 - C:\Users\Piotrek\IdeaProjects\webstore\target\webstore-1.0-SNAPSHOT\
+2018-01-23 16:08:41INFO  PerformanceMonitorInterceptor:32 - Request processing ended on 23/01/2018 at 04:08:41
+2018-01-23 16:08:41INFO  PerformanceMonitorInterceptor:23 - Accessing URL path: /webstore/welcome/greeting
+2018-01-23 16:08:41INFO  PerformanceMonitorInterceptor:24 - Request processing started on: 23/01/2018 at 04:08:41
+2018-01-23 16:08:41INFO  PerformanceMonitorInterceptor:27 - C:\Users\Piotrek\IdeaProjects\webstore\target\webstore-1.0-SNAPSHOT\
+2018-01-23 16:08:41INFO  PerformanceMonitorInterceptor:32 - Request processing ended on 23/01/2018 at 04:08:41
+2018-01-23 16:08:41INFO  PerformanceMonitorInterceptor:40 - Total time taken for processing: 6 ms
+2018-01-23 16:08:41INFO  PerformanceMonitorInterceptor:43 - =======================================================
+2018-01-23 16:08:41ERROR HandlerExecutionChain:170 - HandlerInterceptor.afterCompletion threw exception
+java.lang.NullPointerException
+	at com.packt.Interceptor.PerformanceMonitorInterceptor.afterCompletion(PerformanceMonitorInterceptor.java:39)
+	at org.springframework.web.servlet.HandlerExecutionChain.triggerAfterCompletion(HandlerExecutionChain.java:167)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1023)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:952)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:870)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:852)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:118)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:84)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:103)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:54)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:45)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilter(BasicAuthenticationFilter.java:150)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:183)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:87)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:192)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:160)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:344)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:261)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:651)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:501)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:754)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1376)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2018-01-23 16:09:07INFO  PerformanceMonitorInterceptor:23 - Accessing URL path: /webstore/products
+2018-01-23 16:09:07INFO  PerformanceMonitorInterceptor:24 - Request processing started on: 23/01/2018 at 04:09:07
+2018-01-23 16:09:07INFO  PerformanceMonitorInterceptor:27 - C:\Users\Piotrek\IdeaProjects\webstore\target\webstore-1.0-SNAPSHOT\
+2018-01-23 16:09:07INFO  PerformanceMonitorInterceptor:32 - Request processing ended on 23/01/2018 at 04:09:07
+2018-01-23 16:09:07INFO  PerformanceMonitorInterceptor:40 - Total time taken for processing: 270 ms
+2018-01-23 16:09:07INFO  PerformanceMonitorInterceptor:43 - =======================================================
+2018-01-23 16:09:22INFO  PerformanceMonitorInterceptor:23 - Accessing URL path: /webstore/products/specialOffer?promo=offer
+2018-01-23 16:09:22INFO  PerformanceMonitorInterceptor:24 - Request processing started on: 23/01/2018 at 04:09:22
+2018-01-23 16:09:22INFO  PerformanceMonitorInterceptor:27 - C:\Users\Piotrek\IdeaProjects\webstore\target\webstore-1.0-SNAPSHOT\
+2018-01-23 16:09:22INFO  PerformanceMonitorInterceptor:40 - Total time taken for processing: 9 ms
+2018-01-23 16:09:22INFO  PerformanceMonitorInterceptor:43 - =======================================================
+2018-01-23 16:09:27INFO  PerformanceMonitorInterceptor:23 - Accessing URL path: /webstore/products/specialOffer?promo=OFF3R
+2018-01-23 16:09:27INFO  PerformanceMonitorInterceptor:24 - Request processing started on: 23/01/2018 at 04:09:27
+2018-01-23 16:09:27INFO  PerformanceMonitorInterceptor:27 - C:\Users\Piotrek\IdeaProjects\webstore\target\webstore-1.0-SNAPSHOT\
+2018-01-23 16:09:27INFO  PerformanceMonitorInterceptor:40 - Total time taken for processing: 1 ms
+2018-01-23 16:09:27INFO  PerformanceMonitorInterceptor:43 - =======================================================
+2018-01-23 16:09:55INFO  XmlWebApplicationContext:873 - Closing WebApplicationContext for namespace 'DefaultServlet-servlet': startup date [Tue Jan 23 16:08:39 CET 2018]; parent: Root WebApplicationContext
+2018-01-23 16:09:55INFO  XmlWebApplicationContext:873 - Closing Root WebApplicationContext: startup date [Tue Jan 23 16:08:38 CET 2018]; root of context hierarchy
+2018-01-23 16:10:05INFO  ContextLoader:285 - Root WebApplicationContext: initialization started
+2018-01-23 16:10:05INFO  XmlWebApplicationContext:513 - Refreshing Root WebApplicationContext: startup date [Tue Jan 23 16:10:05 CET 2018]; root of context hierarchy
+2018-01-23 16:10:05INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from ServletContext resource [/WEB-INF/security-context.xml]
+2018-01-23 16:10:05INFO  SpringSecurityCoreVersion:33 - You are running with Spring Security Core 3.1.4.RELEASE
+2018-01-23 16:10:05ERROR SpringSecurityCoreVersion:35 - *** Spring Major version '3' expected, but you are running with version: 4.0.3.RELEASE. Please check your classpath for unwanted jar files.
+2018-01-23 16:10:05INFO  SecurityNamespaceHandler:59 - Spring Security 'config' module version is 3.1.4.RELEASE
+2018-01-23 16:10:05INFO  HttpSecurityBeanDefinitionParser:264 - Checking sorted filter chain: [Root bean: class [org.springframework.security.web.context.SecurityContextPersistenceFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 200, Root bean: class [org.springframework.security.web.authentication.logout.LogoutFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 400, <org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0>, order = 800, Root bean: class [org.springframework.security.web.authentication.www.BasicAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1200, Root bean: class [org.springframework.security.web.savedrequest.RequestCacheAwareFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1300, Root bean: class [org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1400, Root bean: class [org.springframework.security.web.authentication.AnonymousAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1700, Root bean: class [org.springframework.security.web.session.SessionManagementFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1800, Root bean: class [org.springframework.security.web.access.ExceptionTranslationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1900, <org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0>, order = 2000]
+2018-01-23 16:10:05INFO  DefaultSecurityFilterChain:28 - Creating filter chain: org.springframework.security.web.util.AnyRequestMatcher@1, [org.springframework.security.web.context.SecurityContextPersistenceFilter@4546c173, org.springframework.security.web.authentication.logout.LogoutFilter@3f2b048, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4983d1c1, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@132c926a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@60129425, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7674089f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@212ec249, org.springframework.security.web.session.SessionManagementFilter@5666abc4, org.springframework.security.web.access.ExceptionTranslationFilter@22a1ae91, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@74c76aaa]
+2018-01-23 16:10:05INFO  DefaultFilterChainValidator:122 - Checking whether login URL '/login' is accessible with your configuration
+2018-01-23 16:10:05INFO  ContextLoader:325 - Root WebApplicationContext: initialization completed in 643 ms
+2018-01-23 16:10:05INFO  DispatcherServlet:479 - FrameworkServlet 'DefaultServlet': initialization started
+2018-01-23 16:10:05INFO  XmlWebApplicationContext:513 - Refreshing WebApplicationContext for namespace 'DefaultServlet-servlet': startup date [Tue Jan 23 16:10:05 CET 2018]; parent: Root WebApplicationContext
+2018-01-23 16:10:05INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from ServletContext resource [/WEB-INF/DefaultServlet-servlet.xml]
+2018-01-23 16:10:06INFO  RequestMappingHandlerMapping:197 - Mapped "{[/customers],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.packt.controller.CustomerController.customers(org.springframework.ui.Model)
+2018-01-23 16:10:06INFO  RequestMappingHandlerMapping:197 - Mapped "{[/],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.packt.controller.HomeController.welcome(org.springframework.ui.Model)
+2018-01-23 16:10:06INFO  RequestMappingHandlerMapping:197 - Mapped "{[/welcome/greeting],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.packt.controller.HomeController.greeting()
+2018-01-23 16:10:06INFO  RequestMappingHandlerMapping:197 - Mapped "{[/login],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.packt.controller.LoginController.login()
+2018-01-23 16:10:06INFO  RequestMappingHandlerMapping:197 - Mapped "{[/logout],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.packt.controller.LoginController.logout(org.springframework.ui.Model)
+2018-01-23 16:10:06INFO  RequestMappingHandlerMapping:197 - Mapped "{[/loginfailed],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.packt.controller.LoginController.loginerror(org.springframework.ui.Model)
+2018-01-23 16:10:06INFO  RequestMappingHandlerMapping:197 - Mapped "{[/order/P1234/2],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.packt.controller.OrderController.process()
+2018-01-23 16:10:06INFO  RequestMappingHandlerMapping:197 - Mapped "{[/products],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.packt.controller.ProductController.list(org.springframework.ui.Model)
+2018-01-23 16:10:06INFO  RequestMappingHandlerMapping:197 - Mapped "{[/products/product],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.packt.controller.ProductController.getProductById(java.lang.String,org.springframework.ui.Model)
+2018-01-23 16:10:06INFO  RequestMappingHandlerMapping:197 - Mapped "{[/products/{category}/{price}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.packt.controller.ProductController.filterProducts(java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.ui.Model)
+2018-01-23 16:10:06INFO  RequestMappingHandlerMapping:197 - Mapped "{[/products/invalidPromoCode],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.packt.controller.ProductController.invalidPromoCode()
+2018-01-23 16:10:06INFO  RequestMappingHandlerMapping:197 - Mapped "{[/products/{category}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.packt.controller.ProductController.getProductsByCategory(org.springframework.ui.Model,java.lang.String)
+2018-01-23 16:10:06INFO  RequestMappingHandlerMapping:197 - Mapped "{[/products/add],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.packt.controller.ProductController.getAddNewProductForm(org.springframework.ui.Model)
+2018-01-23 16:10:06INFO  RequestMappingHandlerMapping:197 - Mapped "{[/products/add],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.packt.controller.ProductController.processAddNewProductForm(com.packt.domain.Product,org.springframework.validation.BindingResult,javax.servlet.http.HttpServletRequest)
+2018-01-23 16:10:06INFO  SimpleUrlHandlerMapping:315 - Mapped URL path [/resources/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-23 16:10:06INFO  SimpleUrlHandlerMapping:315 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2018-01-23 16:10:07INFO  DispatcherServlet:498 - FrameworkServlet 'DefaultServlet': initialization completed in 1017 ms
+2018-01-23 16:10:07INFO  PerformanceMonitorInterceptor:23 - Accessing URL path: /webstore/
+2018-01-23 16:10:07INFO  PerformanceMonitorInterceptor:24 - Request processing started on: 23/01/2018 at 04:10:07
+2018-01-23 16:10:07INFO  PerformanceMonitorInterceptor:27 - C:\Users\Piotrek\IdeaProjects\webstore\target\webstore-1.0-SNAPSHOT\
+2018-01-23 16:10:07INFO  PerformanceMonitorInterceptor:32 - Request processing ended on 23/01/2018 at 04:10:07
+2018-01-23 16:10:07INFO  PerformanceMonitorInterceptor:23 - Accessing URL path: /webstore/welcome/greeting
+2018-01-23 16:10:07INFO  PerformanceMonitorInterceptor:24 - Request processing started on: 23/01/2018 at 04:10:07
+2018-01-23 16:10:07INFO  PerformanceMonitorInterceptor:27 - C:\Users\Piotrek\IdeaProjects\webstore\target\webstore-1.0-SNAPSHOT\
+2018-01-23 16:10:07INFO  PerformanceMonitorInterceptor:32 - Request processing ended on 23/01/2018 at 04:10:07
+2018-01-23 16:10:08INFO  PerformanceMonitorInterceptor:40 - Total time taken for processing: 489 ms
+2018-01-23 16:10:08INFO  PerformanceMonitorInterceptor:43 - =======================================================
+2018-01-23 16:10:08ERROR HandlerExecutionChain:170 - HandlerInterceptor.afterCompletion threw exception
+java.lang.NullPointerException
+	at com.packt.Interceptor.PerformanceMonitorInterceptor.afterCompletion(PerformanceMonitorInterceptor.java:39)
+	at org.springframework.web.servlet.HandlerExecutionChain.triggerAfterCompletion(HandlerExecutionChain.java:167)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1023)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:952)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:870)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:852)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:118)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:84)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:103)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:54)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:45)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilter(BasicAuthenticationFilter.java:150)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:183)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:87)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:192)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:160)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:344)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:261)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:651)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:501)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:754)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1376)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2018-01-23 16:10:08INFO  PerformanceMonitorInterceptor:23 - Accessing URL path: /webstore/
+2018-01-23 16:10:08INFO  PerformanceMonitorInterceptor:24 - Request processing started on: 23/01/2018 at 04:10:08
+2018-01-23 16:10:08INFO  PerformanceMonitorInterceptor:27 - C:\Users\Piotrek\IdeaProjects\webstore\target\webstore-1.0-SNAPSHOT\
+2018-01-23 16:10:08INFO  PerformanceMonitorInterceptor:32 - Request processing ended on 23/01/2018 at 04:10:08
+2018-01-23 16:10:08INFO  PerformanceMonitorInterceptor:23 - Accessing URL path: /webstore/welcome/greeting
+2018-01-23 16:10:08INFO  PerformanceMonitorInterceptor:24 - Request processing started on: 23/01/2018 at 04:10:08
+2018-01-23 16:10:08INFO  PerformanceMonitorInterceptor:27 - C:\Users\Piotrek\IdeaProjects\webstore\target\webstore-1.0-SNAPSHOT\
+2018-01-23 16:10:08INFO  PerformanceMonitorInterceptor:32 - Request processing ended on 23/01/2018 at 04:10:08
+2018-01-23 16:10:08INFO  PerformanceMonitorInterceptor:40 - Total time taken for processing: 4 ms
+2018-01-23 16:10:08INFO  PerformanceMonitorInterceptor:43 - =======================================================
+2018-01-23 16:10:08ERROR HandlerExecutionChain:170 - HandlerInterceptor.afterCompletion threw exception
+java.lang.NullPointerException
+	at com.packt.Interceptor.PerformanceMonitorInterceptor.afterCompletion(PerformanceMonitorInterceptor.java:39)
+	at org.springframework.web.servlet.HandlerExecutionChain.triggerAfterCompletion(HandlerExecutionChain.java:167)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1023)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:952)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:870)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:852)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:118)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:84)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:103)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:54)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:45)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilter(BasicAuthenticationFilter.java:150)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:183)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:87)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:192)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:160)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:344)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:261)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:651)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:501)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:754)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1376)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2018-01-23 16:10:10INFO  PerformanceMonitorInterceptor:23 - Accessing URL path: /webstore/products/specialOffer?promo=OFF3R
+2018-01-23 16:10:10INFO  PerformanceMonitorInterceptor:24 - Request processing started on: 23/01/2018 at 04:10:10
+2018-01-23 16:10:10INFO  PerformanceMonitorInterceptor:27 - C:\Users\Piotrek\IdeaProjects\webstore\target\webstore-1.0-SNAPSHOT\
+2018-01-23 16:10:10INFO  PerformanceMonitorInterceptor:40 - Total time taken for processing: 1 ms
+2018-01-23 16:10:10INFO  PerformanceMonitorInterceptor:43 - =======================================================
+2018-01-23 16:10:10INFO  PerformanceMonitorInterceptor:23 - Accessing URL path: /webstore/products
+2018-01-23 16:10:10INFO  PerformanceMonitorInterceptor:24 - Request processing started on: 23/01/2018 at 04:10:10
+2018-01-23 16:10:10INFO  PerformanceMonitorInterceptor:27 - C:\Users\Piotrek\IdeaProjects\webstore\target\webstore-1.0-SNAPSHOT\
+2018-01-23 16:10:10INFO  PerformanceMonitorInterceptor:32 - Request processing ended on 23/01/2018 at 04:10:10
+2018-01-23 16:10:10INFO  PerformanceMonitorInterceptor:40 - Total time taken for processing: 251 ms
+2018-01-23 16:10:10INFO  PerformanceMonitorInterceptor:43 - =======================================================
+2018-01-23 16:10:16INFO  PerformanceMonitorInterceptor:23 - Accessing URL path: /webstore/products/specialOffer?promo=OFF3RF
+2018-01-23 16:10:16INFO  PerformanceMonitorInterceptor:24 - Request processing started on: 23/01/2018 at 04:10:16
+2018-01-23 16:10:16INFO  PerformanceMonitorInterceptor:27 - C:\Users\Piotrek\IdeaProjects\webstore\target\webstore-1.0-SNAPSHOT\
+2018-01-23 16:10:16INFO  PerformanceMonitorInterceptor:40 - Total time taken for processing: 2 ms
+2018-01-23 16:10:16INFO  PerformanceMonitorInterceptor:43 - =======================================================
+2018-01-23 16:10:16INFO  PerformanceMonitorInterceptor:23 - Accessing URL path: /webstore/products/invalidPromoCode
+2018-01-23 16:10:16INFO  PerformanceMonitorInterceptor:24 - Request processing started on: 23/01/2018 at 04:10:16
+2018-01-23 16:10:16INFO  PerformanceMonitorInterceptor:27 - C:\Users\Piotrek\IdeaProjects\webstore\target\webstore-1.0-SNAPSHOT\
+2018-01-23 16:10:16INFO  PerformanceMonitorInterceptor:32 - Request processing ended on 23/01/2018 at 04:10:16
+2018-01-23 16:10:16INFO  PerformanceMonitorInterceptor:40 - Total time taken for processing: 153 ms
+2018-01-23 16:10:16INFO  PerformanceMonitorInterceptor:43 - =======================================================
+2018-01-23 16:10:18INFO  PerformanceMonitorInterceptor:23 - Accessing URL path: /webstore/products
+2018-01-23 16:10:18INFO  PerformanceMonitorInterceptor:24 - Request processing started on: 23/01/2018 at 04:10:18
+2018-01-23 16:10:18INFO  PerformanceMonitorInterceptor:27 - C:\Users\Piotrek\IdeaProjects\webstore\target\webstore-1.0-SNAPSHOT\
+2018-01-23 16:10:18INFO  PerformanceMonitorInterceptor:32 - Request processing ended on 23/01/2018 at 04:10:18
+2018-01-23 16:10:18INFO  PerformanceMonitorInterceptor:40 - Total time taken for processing: 7 ms
+2018-01-23 16:10:18INFO  PerformanceMonitorInterceptor:43 - =======================================================

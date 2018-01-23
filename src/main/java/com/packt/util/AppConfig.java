@@ -2,6 +2,7 @@ package com.packt.util;
 
 import com.packt.Interceptor.AuditingInterceptor;
 import com.packt.Interceptor.PerformanceMonitorInterceptor;
+import com.packt.Interceptor.PromoCodeInterceptor;
 import com.packt.domain.Product;
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
@@ -71,11 +72,23 @@ public class AppConfig extends WebMvcConfigurerAdapter {
     AuditingInterceptor auditingInterceptor(){
         return new AuditingInterceptor();
     }
+
+    @Bean
+    PromoCodeInterceptor promoCodeInterceptor(){
+        PromoCodeInterceptor promo = new PromoCodeInterceptor();
+        promo.setErrorRedirect("invalidPromoCode");
+        promo.setPromoCode("OFF3R");
+        promo.setOfferRedirect("products");
+        return promo;
+    }
+
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(localInterceptor());
         registry.addInterceptor(localeChangeInterceptor());
         registry.addInterceptor(auditingInterceptor());
+        registry.addInterceptor(promoCodeInterceptor());
+
     }
 
     @Bean
