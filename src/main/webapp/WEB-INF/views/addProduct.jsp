@@ -75,13 +75,6 @@
             </div>
         </div>
         <div class="form-group">
-            <label class="control-label col-lg-2 col-lg-2"><spring:message code= "addProduct.form.unitsInOrder.label"/></label>
-            <div class="col-lg-10">
-
-            </div>
-        </div>
-
-        <div class="form-group">
             <label class="control-label col-lg-2"
                    for="description"><spring:message code= "addProduct.form.description.label"/></label>
             <div class="col-lg-10">

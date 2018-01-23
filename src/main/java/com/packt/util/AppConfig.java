@@ -1,5 +1,6 @@
 package com.packt.util;
 
+import com.packt.Interceptor.AuditingInterceptor;
 import com.packt.Interceptor.PerformanceMonitorInterceptor;
 import com.packt.domain.Product;
 import org.springframework.context.MessageSource;
@@ -66,10 +67,15 @@ public class AppConfig extends WebMvcConfigurerAdapter {
         return new PerformanceMonitorInterceptor();
     }
 
+    @Bean
+    AuditingInterceptor auditingInterceptor(){
+        return new AuditingInterceptor();
+    }
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(localInterceptor());
         registry.addInterceptor(localeChangeInterceptor());
+        registry.addInterceptor(auditingInterceptor());
     }
 
     @Bean
