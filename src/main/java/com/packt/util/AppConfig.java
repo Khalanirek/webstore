@@ -10,8 +10,11 @@ import org.springframework.context.support.ResourceBundleMessageSource;
 import org.springframework.http.MediaType;
 import org.springframework.web.accept.ContentNegotiationManager;
 import org.springframework.web.multipart.commons.CommonsMultipartResolver;
+import org.springframework.web.servlet.LocaleResolver;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.*;
+import org.springframework.web.servlet.i18n.LocaleChangeInterceptor;
+import org.springframework.web.servlet.i18n.SessionLocaleResolver;
 import org.springframework.web.servlet.view.ContentNegotiatingViewResolver;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
@@ -19,6 +22,7 @@ import org.springframework.web.util.UrlPathHelper;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 @Configuration
 @EnableWebMvc
@@ -32,6 +36,7 @@ public class AppConfig extends WebMvcConfigurerAdapter {
         return internalResourceViewResolver;
     }
 
+
     /*
      * Configure ContentNegotiationManager
      */
@@ -41,6 +46,31 @@ public class AppConfig extends WebMvcConfigurerAdapter {
                 MediaType.TEXT_HTML);
     }
 
+    @Bean
+    public LocaleChangeInterceptor localeChangeInterceptor(){
+        LocaleChangeInterceptor localeChangeInterceptor=new LocaleChangeInterceptor();
+        localeChangeInterceptor.setParamName("language");
+        return localeChangeInterceptor;
+    }
+
+    @Bean(name = "localeResolver")
+    public LocaleResolver sessionLocaleResolver(){
+        SessionLocaleResolver localeResolver=new SessionLocaleResolver();
+        localeResolver.setDefaultLocale(new Locale("en"));
+
+        return localeResolver;
+    }
+
+    @Bean
+    PerformanceMonitorInterceptor localInterceptor() {
+        return new PerformanceMonitorInterceptor();
+    }
+
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        registry.addInterceptor(localInterceptor());
+        registry.addInterceptor(localeChangeInterceptor());
+    }
 
     @Bean
     public ViewResolver contentNegotiatingViewResolver(ContentNegotiationManager manager) {
@@ -105,14 +135,5 @@ public class AppConfig extends WebMvcConfigurerAdapter {
                 .addResourceLocations("/WEB-INF/classes/");
     }
 
-    @Bean
-    PerformanceMonitorInterceptor localInterceptor() {
-        return new PerformanceMonitorInterceptor();
-    }
-
-    @Override
-    public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(localInterceptor());
-    }
 
 }

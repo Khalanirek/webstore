@@ -119,7 +119,7 @@ public class ProductController {
     @InitBinder
     public void initialiseBinder(WebDataBinder binder) {
         binder.setAllowedFields("productId","name","unitPrice","description",
-                "manufacturer","category","unitsInStock", "productImage", "productPDF");
+                "manufacturer","category","unitsInStock", "productImage", "productPDF", "language");
 
     }
 
