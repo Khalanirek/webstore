@@ -6,18 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5feb116f-bff7-4abd-b306-82155adc4e25" name="Default" comment="Firts version">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/packt/Interceptor/PromoCodeInterceptor.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/invalidPromoCode.jsp" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/packt/controller/ProductController.java" afterPath="$PROJECT_DIR$/src/main/java/com/packt/controller/ProductController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/packt/util/AppConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/packt/util/AppConfig.java" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/packt/controller/ProductController.class" afterPath="$PROJECT_DIR$/target/classes/com/packt/controller/ProductController.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/packt/util/AppConfig.class" afterPath="$PROJECT_DIR$/target/classes/com/packt/util/AppConfig.class" />
-      <change beforePath="$PROJECT_DIR$/target/webstore-1.0-SNAPSHOT/WEB-INF/classes/com/packt/controller/ProductController.class" afterPath="$PROJECT_DIR$/target/webstore-1.0-SNAPSHOT/WEB-INF/classes/com/packt/controller/ProductController.class" />
-      <change beforePath="$PROJECT_DIR$/target/webstore-1.0-SNAPSHOT/WEB-INF/classes/com/packt/util/AppConfig.class" afterPath="$PROJECT_DIR$/target/webstore-1.0-SNAPSHOT/WEB-INF/classes/com/packt/util/AppConfig.class" />
-      <change beforePath="$PROJECT_DIR$/target/webstore-1.0-SNAPSHOT/WEB-INF/logs/webstore-performance.log" afterPath="$PROJECT_DIR$/target/webstore-1.0-SNAPSHOT/WEB-INF/logs/webstore-performance.log" />
-    </list>
+    <list default="true" id="5feb116f-bff7-4abd-b306-82155adc4e25" name="Default" comment="Firts version" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -203,7 +192,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="webstoreWithLogin" />
+        <entry key="$PROJECT_DIR$" value="Interceptors" />
       </map>
     </option>
   </component>
@@ -688,12 +677,12 @@
       <workItem from="1516440548988" duration="8615000" />
       <workItem from="1516450967752" duration="1663000" />
       <workItem from="1516472055085" duration="6493000" />
-      <workItem from="1516707442438" duration="10477000" />
+      <workItem from="1516707442438" duration="10514000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111033000" />
+    <option name="totallyTimeSpent" value="111070000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
