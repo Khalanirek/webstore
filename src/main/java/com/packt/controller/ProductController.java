@@ -2,6 +2,8 @@ package com.packt.controller;
 
 import com.packt.domain.Product;
 import com.packt.domain.repository.ProductRepository;
+import com.packt.exceptions.NoProductsFoundUnderCategoryException;
+import com.packt.exceptions.ProductNotFoundException;
 import com.packt.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -10,7 +12,11 @@ import org.springframework.util.StringUtils;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpServletRequest;
+import java.io.File;
 import java.math.BigDecimal;
 import java.util.HashSet;
 import java.util.List;
@@ -34,7 +40,12 @@ public class ProductController {
 
     @RequestMapping("/{category}")
     public String getProductsByCategory(Model model, @PathVariable("category") String productCategory){
-        model.addAttribute("products", productService.getProductsByCategory(productCategory));
+
+        List<Product> products = productService.getProductsByCategory(productCategory);
+        if (products == null || products.isEmpty()) {
+            throw new NoProductsFoundUnderCategoryException();
+        }
+        model.addAttribute("products", products);
 
         return "products";
     }
@@ -74,12 +85,32 @@ public class ProductController {
 
     @RequestMapping(value = "/add", method = RequestMethod.POST)
     public String processAddNewProductForm(@ModelAttribute("newProduct")
-                                           Product newProduct, BindingResult result){
+                                           Product newProduct, BindingResult result,
+                                           HttpServletRequest request){
         String[] suppressedFields = result.getSuppressedFields();
         if (suppressedFields.length > 0) {
             throw new RuntimeException("Attempting to bind disallowed fields: "
                     + StringUtils.arrayToCommaDelimitedString(suppressedFields));
         }
+
+        MultipartFile productImage = newProduct.getProductImage();
+        String rootDirectory
+                = request.getSession().getServletContext().getRealPath("/");
+        if (productImage!=null && !productImage.isEmpty()) {
+            try {
+                productImage.transferTo(new File(rootDirectory+"WEB-INF\\classes\\images\\"+newProduct.getProductId() + ".jpg"));
+            } catch (Exception e) {
+                throw new RuntimeException("Product Image saving failed",e);
+            }
+        }
+
+        MultipartFile productPDF = newProduct.getProductPDF();
+        if (productPDF != null && !productPDF.isEmpty())
+            try{
+                productPDF.transferTo((new File(rootDirectory + "WEB-INF\\classes\\pdf\\" + newProduct.getProductId() + ".pdf")));
+            } catch (Exception e) {
+                throw new RuntimeException("Product PDF saving failed", e);
+            }
 
         productService.addProduct(newProduct);
         return "redirect:/products";
@@ -87,6 +118,20 @@ public class ProductController {
 
     @InitBinder
     public void initialiseBinder(WebDataBinder binder) {
-        binder.setDisallowedFields("unitsInOrder", "discontinued");
+        binder.setAllowedFields("productId","name","unitPrice","description",
+                "manufacturer","category","unitsInStock", "productImage", "productPDF");
+
     }
+
+    @ExceptionHandler(ProductNotFoundException.class)
+    public ModelAndView handleError(HttpServletRequest
+                                            req,ProductNotFoundException exception) {
+        ModelAndView mav = new ModelAndView();
+        mav.addObject("invalidProductId", exception.getProductId());
+        mav.addObject("exception", exception);
+        mav.addObject("url",req.getRequestURL()+"?"+req.getQueryString());
+        mav.setViewName("productNotFound");
+        return mav;
+    }
+
 }

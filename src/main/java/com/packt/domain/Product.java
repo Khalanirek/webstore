@@ -1,7 +1,13 @@
 package com.packt.domain;
 
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.springframework.web.multipart.MultipartFile;
+
+import javax.xml.bind.annotation.XmlRootElement;
 import java.math.BigDecimal;
 
+@XmlRootElement
 public class Product {
 
     private String productId;
@@ -14,6 +20,8 @@ public class Product {
     private long unitsInOrder;
     private boolean discontinued;
     private String condition;
+    private MultipartFile productImage;
+    private MultipartFile productPDF;
 
     public Product(){
         super();
@@ -105,6 +113,23 @@ public class Product {
 
     public void setCondition(String condition) {
         this.condition = condition;
+    }
+
+    @JsonIgnore
+    public MultipartFile getProductImage() {
+        return productImage;
+    }
+
+    public void setProductImage(MultipartFile productImage) {
+        this.productImage = productImage;
+    }
+
+    public MultipartFile getProductPDF() {
+        return productPDF;
+    }
+
+    public void setProductPDF(MultipartFile productPDF) {
+        this.productPDF = productPDF;
     }
 
     @Override
